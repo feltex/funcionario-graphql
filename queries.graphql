@@ -1,0 +1,39 @@
+query listarFuncionarios {
+    listar {
+        departamento
+        id
+        nome
+    }
+}
+
+query buscarUmFuncionario($id: ID) {
+    buscarPorId(id: $id) {
+        id
+        nome
+        departamento
+    }
+}
+
+mutation createFuncionario($departamento: Departamento, $nome: String) {
+    criar(departamento: $departamento, nome: $nome) {
+        id
+        nome
+        departamento
+    }
+}
+
+mutation atualizar($id: ID, $nome: String, $departamento: Departamento) {
+    atualizar(id: $id, nome: $nome, departamento: $departamento) {
+        id
+        nome
+        departamento
+    }
+}
+
+mutation delete($id: ID) {
+    deletar(id: $id) {
+        id
+        nome
+        departamento
+    }
+}

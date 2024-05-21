@@ -1,0 +1,23 @@
+type Funcionario{
+    id: ID!
+    nome: String
+    departamento: Departamento
+}
+
+enum Departamento{
+    RH
+    TI
+    FINANCEIRO
+    DIRETORIA
+}
+
+type Query{
+    listar: [Funcionario]
+    buscarPorId(id: ID): Funcionario
+}
+
+type Mutation{
+    criar(nome:String, departamento: Departamento): Funcionario
+    atualizar(id: ID, nome: String, departamento: Departamento): Funcionario
+    deletar(id: ID):Funcionario
+}
