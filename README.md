@@ -28,11 +28,11 @@ Este projeto é um sistema CRUD em memória desenvolvido em Java 21 e Spring Boo
 ## Como Executar o Projeto
 1. **Clone o repositório**:
    ```sh
-   git clone https://github.com/seu-usuario/seu-repositorio.git
+   git clone [https://github.com/seu-usuario/seu-repositorio.git](https://github.com/feltex/funcionario-graphql)
    ```
 2. **Navegue até o diretório do projeto**:
    ```sh
-   cd seu-repositorio
+   cd funcionario-graphql
    ```
 3. **Compile o projeto utilizando Maven**:
    ```sh
